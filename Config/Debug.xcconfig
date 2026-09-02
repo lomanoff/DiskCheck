@@ -1,0 +1,6 @@
+#include "Base.xcconfig"
+
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+DEBUG_INFORMATION_FORMAT = dwarf
+
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID

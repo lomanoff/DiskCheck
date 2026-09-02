@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>ru</string>
+	<key>CFBundleDisplayName</key>
+	<string>DiskCheck</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>CFBundleIconName</key>
+	<string>AppIcon</string>
+	<key>LSApplicationCategoryType</key>
+	<string>public.app-category.utilities</string>
+	<key>LSMinimumSystemVersion</key>
+	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2026 LOMO Studios. All rights reserved.</string>
+	<key>NSPrincipalClass</key>
+	<string>NSApplication</string>
+	<key>ITSAppUsesNonExemptEncryption</key>
+	<false/>
+	<key>NSRemovableVolumesUsageDescription</key>
+	<string>DiskCheck анализирует подключённые тома, чтобы показать, что занимает место на диске.</string>
+	<key>NSDesktopFolderUsageDescription</key>
+	<string>DiskCheck сканирует Рабочий стол, чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSDocumentsFolderUsageDescription</key>
+	<string>DiskCheck сканирует папку «Документы», чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSDownloadsFolderUsageDescription</key>
+	<string>DiskCheck сканирует папку «Загрузки», чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSMusicFolderUsageDescription</key>
+	<string>DiskCheck сканирует папку «Музыка», чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSPicturesFolderUsageDescription</key>
+	<string>DiskCheck сканирует папку «Изображения», чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSMoviesFolderUsageDescription</key>
+	<string>DiskCheck сканирует папку «Фильмы», чтобы показать, какие файлы занимают место на диске.</string>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>DiskCheck может подключаться к локальному Ollama (127.0.0.1) для ИИ-рекомендаций по очистке, если вы его используете.</string>
+</dict>
+</plist>

@@ -1,0 +1,57 @@
+name: DiskCheck
+options:
+  bundleIdPrefix: com.lomostudios.diskcheck
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MARKETING_VERSION: "1.0.0"
+    CURRENT_PROJECT_VERSION: "1"
+targets:
+  DiskCheck:
+    type: application
+    platform: macOS
+    sources:
+      - path: DiskCheck/Sources
+      - path: DiskCheck/Assets.xcassets
+      - path: DiskCheck/PrivacyInfo.xcprivacy
+    configFiles:
+      Debug: Config/Debug.xcconfig
+      Release: Config/Release.xcconfig
+    settings:
+      base:
+        PRODUCT_NAME: DiskCheck
+        PRODUCT_BUNDLE_IDENTIFIER: com.lomostudios.diskcheck
+        GENERATE_INFOPLIST_FILE: "NO"
+        INFOPLIST_FILE: DiskCheck/Info.plist
+        CODE_SIGN_ENTITLEMENTS: DiskCheck/DiskCheck.entitlements
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_HARDENED_RUNTIME: "YES"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS: "NO"
+        COMBINE_HIDPI_IMAGES: "YES"
+  DiskCheckTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - path: Tests
+    dependencies:
+      - target: DiskCheck
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.lomostudios.diskcheck.tests
+        GENERATE_INFOPLIST_FILE: "YES"
+schemes:
+  DiskCheck:
+    build:
+      targets:
+        DiskCheck: all
+        DiskCheckTests: [test]
+    test:
+      targets:
+        - DiskCheckTests
+    archive:
+      config: Release

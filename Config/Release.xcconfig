@@ -1,0 +1,10 @@
+#include "Base.xcconfig"
+
+SWIFT_OPTIMIZATION_LEVEL = -O
+ENABLE_NS_ASSERTIONS = NO
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+VALIDATE_PRODUCT = YES
+COPY_PHASE_STRIP = NO
+
+// Укажите Team ID в Xcode (Signing & Capabilities) или раскомментируйте:
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID
