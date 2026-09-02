@@ -167,5 +167,5 @@ DiskCheck/
 ---
 
 <p align="center">
-  <sub>DiskCheck · LOMO Studios · 2026</sub>
+  <sub>DiskCheck · 2026</sub>
 </p>
